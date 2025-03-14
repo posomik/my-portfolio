@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --neon-green: rgb(0, 140, 255);
-  --neon-green-dim: blue;
+  --lightblue: rgb(0, 140, 255);
+  --lightblue-dim: blue;
   --dark-bg: #000016;
   --dark-card: #0a0a0a;
   --text-light: #ffffff;
@@ -18,7 +18,7 @@
 }
 
 section {
-  padding: 100px 200px;
+  padding: 100px 20px;
 }
 
 .main {
@@ -46,6 +46,7 @@ section {
 .main .content {
   max-width: 800px;
   position: relative;
+  padding-left: 100px;
 }
 
 .main .content h2 {
@@ -57,8 +58,8 @@ section {
 .main .content h2 span {
   font-size: 2.6em;
   font-weight: 600;
-  color: var(--neon-green);
-  text-shadow: 0 0 10px var(--neon-green);
+  color: var(--lightblue);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .animated-text {
@@ -73,7 +74,7 @@ section {
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .animated-text h3:nth-child(1) {
@@ -106,7 +107,7 @@ section {
 
 .btn {
   color: var(--text-light);
-  background: var(--neon-green);
+  background: var(--lightblue);
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -117,16 +118,17 @@ section {
   border-radius: 2px;
   margin-top: 30px;
   transition: 0.5s ease;
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .btn:hover {
-  background: var(--neon-green-dim);
-  box-shadow: 0 0 20px var(--neon-green);
+  background: var(--blue);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 
 .media-icons {
   margin-top: 50px;
+  padding-left: 200px;
 }
 
 .media-icons a {
@@ -137,8 +139,8 @@ section {
 }
 
 .media-icons a:hover {
-  color: var(--neon-green);
-  text-shadow: 0 0 10px var(--neon-green);
+  color: var(--lightblue);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 header {
@@ -159,8 +161,8 @@ header {
 header.sticky {
   background: var(--dark-bg);
   padding: 10px 200px;
-  border-bottom: 2px solid var(--neon-green);
-  box-shadow: 0 0 10px var(--neon-green);
+  border-bottom: 2px solid var(--lightblue);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .menu-btn {
@@ -242,7 +244,7 @@ header .navigation a {
 
 header .navigation a:hover {
   color: aqua;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 body {
@@ -261,13 +263,13 @@ body {
 
 .section-title {
   position: relative;
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 60px;
   text-align: center;
   width: 100%;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .section-title:before {
@@ -277,9 +279,9 @@ body {
   left: 50%;
   width: 300px;
   height: 4px;
-  background: var(--neon-green);
+  background: var(--lightblue);
   transform: translateX(-50%);
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .section-title:after {
@@ -290,9 +292,9 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: var(--neon-green);
+  background: var(--lightblue);
   transform: translateX(-50%);
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .about .content {
@@ -301,6 +303,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  padding: 0 100px;
 }
 
 .about .content .col-left {
@@ -317,8 +320,8 @@ body {
   position: relative;
   width: 100%;
   min-height: 450px;
-  border: 2px solid var(--neon-green);
-  box-shadow: 0 0 20px var(--neon-green);
+  border: 2px solid var(--lightblue);
+  box-shadow: 0 0 20px var(--lightblue);
   border-radius: 10px;
 }
 
@@ -336,8 +339,8 @@ body {
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 20px;
-  color: var(--neon-green);
-  text-shadow: 0 0 10px var(--neon-green);
+  color: var(--lightblue);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .about .content .col-right .paragraph-text {
@@ -355,6 +358,7 @@ body {
   justify-content: space-between;
   color: var(--text-light);
   margin-top: 20px;
+  padding: 0 200px;
 }
 
 .skills .content .col-left {
@@ -370,7 +374,7 @@ body {
 .skills .content .col-right .bar {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
   border-radius: 6px;
 }
 
@@ -392,7 +396,7 @@ body {
   height: 15px;
   background: var(--dark-card);
   border-radius: 2px;
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
 }
 
 .skills .content .col-right .bar .line:before {
@@ -402,8 +406,8 @@ body {
   top: 0;
   left: 0;
   border-radius: 2px;
-  background: var(--neon-green);
-  box-shadow: 0 0 10px var(--neon-green);
+  background: var(--lightblue);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .skills .content .col-right .bar .html:before {
@@ -422,7 +426,7 @@ body {
   width: 90%;
 }
 .skills .content .col-right .bar .ux:before {
-  width: 75%;
+  width: 95%;
 }
 
 .services .content {
@@ -448,16 +452,16 @@ body {
   flex-direction: column;
   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
   border-radius: 10px;
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
   transition: 0.3s ease;
 }
 
 .services .content .card:hover {
-  box-shadow: 0 0 20px var(--neon-green);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 
 .services .content .card .service-icon {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 8em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -472,11 +476,11 @@ body {
 }
 
 .services .content .card .info h3 {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 /* Projects Section Styles */
 .projects {
@@ -505,9 +509,9 @@ body {
   left: 50%;
   width: 15px;
   height: 15px;
-  background: var(--neon-green);
+  background: var(--lightblue);
   transform: translateX(-50%);
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .projects .project-container {
@@ -530,16 +534,16 @@ body {
 
 .projects .project-card:hover {
   transform: translateY(-5px);
-  border-color: var(--neon-green);
+  border-color: var(--lightblue);
   box-shadow: 0 0 20px rgba(20, 134, 255, 0.2);
 }
 
 .projects .project-icon {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .projects .project-content h3 {
@@ -550,7 +554,7 @@ body {
 }
 
 .projects .project-content .subtitle {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 16px;
   margin-bottom: 20px;
   opacity: 0.8;
@@ -623,12 +627,12 @@ body {
   flex-direction: column;
   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
   border-radius: 10px;
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
   transition: 0.3s ease;
 }
 
 .contact .content .row .card:hover {
-  box-shadow: 0 0 20px var(--neon-green);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 .contact .content .row .card .info {
   text-align: center;
@@ -652,7 +656,7 @@ body {
 }
 
 .contact .content .row .card .contact-icon {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 4em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -668,17 +672,17 @@ body {
   margin-top: 50px;
   padding: 50px;
   border-radius: 10px;
-  border: 1px solid var(--neon-green);
-  box-shadow: 0 0 20px var(--neon-green);
+  border: 1px solid var(--lightblue);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 
 .contact-form h3 {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-size: 1.6em;
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .contact-form .input-box {
@@ -695,7 +699,7 @@ body {
   font-size: 1em;
   font-weight: 400;
   outline: none;
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
   border-radius: 5px;
   background: var(--dark-bg);
   resize: none;
@@ -703,7 +707,7 @@ body {
 
 .contact-form .input-box .send-btn {
   color: var(--text-light);
-  background: var(--neon-green);
+  background: var(--lightblue);
   display: inline-block;
   font-size: 1.1em;
   font-weight: 500;
@@ -713,12 +717,12 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.5s ease;
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .contact-form .input-box .send-btn:hover {
-  background: var(--neon-green-dim);
-  box-shadow: 0 0 20px var(--neon-green);
+  background: var(--lightblue-dim);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 
 .footer {
@@ -726,7 +730,7 @@ body {
   color: var(--text-light);
   text-align: center;
   padding: 2em;
-  border-top: 2px solid var(--neon-green);
+  border-top: 2px solid var(--lightblue);
 }
 
 .footer .footer-title {
@@ -740,16 +744,16 @@ body {
 }
 
 .footer p a {
-  color: var(--neon-green);
+  color: var(--lightblue);
   font-weight: 600;
   text-decoration: none;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .scrollToTop-btn {
   z-index: 999;
   position: fixed;
-  background: var(--neon-green);
+  background: var(--lightblue);
   color: var(--text-light);
   width: 45px;
   height: 45px;
@@ -763,7 +767,7 @@ body {
   pointer-events: none;
   opacity: 0;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 10px var(--lightblue);
 }
 
 .scrollToTop-btn.active {
@@ -816,7 +820,7 @@ body {
     flex-direction: column;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
     transition: 0.3s ease;
-    border-left: 2px solid var(--neon-green);
+    border-left: 2px solid var(--lightblue);
   }
 
   header .navigation a {
@@ -828,9 +832,9 @@ body {
   }
 
   header .navigation a:hover {
-    background: var(--neon-green);
+    background: var(--lightblue);
     color: var(--text-light);
-    box-shadow: 0 0 10px var(--neon-green);
+    box-shadow: 0 0 10px var(--lightblue);
     transition: 0.3s ease;
   }
 
@@ -850,8 +854,9 @@ body {
     font-size: 1.8em;
   }
 
-  .about .content {
-    flex-direction: column;
+  .about .content,
+  .skills .content {
+    padding: 0 20px;
   }
 
   .about .content .column {
@@ -861,10 +866,6 @@ body {
 
   .about .content .col-right {
     margin-top: 40px;
-  }
-
-  .skills .content {
-    flex-direction: column;
   }
 
   .skills .content .column {
@@ -878,6 +879,14 @@ body {
 
   .contact-form {
     padding: 35px 40px;
+  }
+
+  .main .content {
+    padding-left: 20px;
+  }
+
+  .media-icons {
+    padding-left: 20px;
   }
 }
 
@@ -899,7 +908,7 @@ body {
 .certification-card,
 .tool-card {
   background: rgba(10, 10, 10, 0.8);
-  border: 1px solid var(--neon-green);
+  border: 1px solid var(--lightblue);
   border-radius: 10px;
   padding: 30px;
   text-align: center;
@@ -912,7 +921,7 @@ body {
 .certification-card:hover,
 .tool-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--neon-green);
+  box-shadow: 0 0 20px var(--lightblue);
 }
 
 .certification-card::before,
@@ -936,9 +945,9 @@ body {
 .cert-icon,
 .tool-icon {
   font-size: 3em;
-  color: var(--neon-green);
+  color: var(--lightblue);
   margin-bottom: 20px;
-  text-shadow: 0 0 10px var(--neon-green);
+  text-shadow: 0 0 10px var(--lightblue);
 }
 
 .certification-card h3,
@@ -980,7 +989,6 @@ body {
     font-size: 1.2em;
   }
 }
-
 
 .scrollToTop-btn{
   z-index: 999;
@@ -1049,7 +1057,6 @@ body {
     margin-right: 15px;
   }
 
-  /* Adjust navigation menu for mobile */
   header .navigation.active {
     width: 100%;
     height: 100vh;
@@ -1065,10 +1072,14 @@ body {
     margin: 15px 0;
   }
 
-  /* Adjust button size for mobile */
   .btn {
     padding: 8px 15px;
     font-size: 0.9em;
+  }
+
+  .about .content,
+  .skills .content {
+    padding: 0 15px;
   }
 }
 
@@ -1090,3 +1101,4 @@ body {
     font-size: 1.8em;
   }
 }
+
