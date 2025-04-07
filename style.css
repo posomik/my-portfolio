@@ -436,106 +436,170 @@ header.sticky {
   margin-bottom: 20px;
 }
 
-/* Skills Section */
-.skills {
-  background: rgba(10, 10, 20, 0.3);
+/* Skills Grid */
+.skills-grid.reveal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
-.skills .content {
-  position: relative;
+.skill-item {
   width: 100%;
+}
+
+.skill-info {
   display: flex;
-  justify-content: space-between;
-  color: var(--text-light);
-  gap: 40px;
-}
-
-.skills .content .col-left {
-  position: relative;
-  width: 46%;
-}
-
-.skills .content .col-right {
-  position: relative;
-  width: 46%;
-}
-
-.skills .content .col-right .bar {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid var(--lightblue);
-  border-radius: var(--border-radius);
-  transition: var(--transition-normal);
-  background: rgba(0, 140, 255, 0.05);
-}
-
-.skills .content .col-right .bar:hover {
-  box-shadow: 0 0 15px var(--lightblue);
-  transform: translateY(-3px);
-}
-
-.skills .content .col-right .bar .info {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.skills .content .col-right .bar .info span {
-  font-size: 18px;
+.skill-name {
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
-.skills .content .col-right .bar .line {
-  position: relative;
+.skill-percentage {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--light-blue);
+}
+
+.skill-bar {
   width: 100%;
-  height: 15px;
-  background: var(--dark-card);
-  border-radius: 10px;
-  border: 1px solid var(--lightblue);
+  height: 10px;
+  background: rgba(13, 10, 207, 0.1);
+  border-radius: 5px;
   overflow: hidden;
 }
 
-.skills .content .col-right .bar .line:before {
-  content: "";
-  position: absolute;
+.skill-progress {
   height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: var(--lightblue);
-  box-shadow: 0 0 10px var(--lightblue);
+  background: #008cff;
+  border-radius: 5px;
   animation: skillFill 2s ease-in-out forwards;
-  opacity: 0;
 }
 
+/* Programming Skills */
+.programming-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--text-light);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.tool-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 10px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: 500;
+  transition: var(--transition-normal);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tool-item:hover {
+  background: rgba(0, 123, 255, 0.1);
+  transform: translateY(-5px);
+  border-color: var(--light-blue);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Animations */
 @keyframes skillFill {
   0% {
     width: 0;
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
 
-.skills .content .col-right .bar .html:before {
-  width: 95%;
+/* Reveal Animation */
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
 }
-.skills .content .col-right .bar .css:before {
-  width: 90%;
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
-.skills .content .col-right .bar .javascript:before {
-  width: 85%;
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-.skills .content .col-right .bar .jquery:before {
-  width: 80%;
+
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
 }
-.skills .content .col-right .bar .php:before {
-  width: 90%;
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+  
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .skill-name, .skill-percentage {
+    font-size: 1rem;
+  }
 }
-.skills .content .col-right .bar .ux:before {
-  width: 95%;
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .tools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .tool-item {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+  
+  .skill-name, .skill-percentage {
+    font-size: 0.9rem;
+  }
 }
 
 /* Services Section */
@@ -796,7 +860,7 @@ header.sticky {
 .contact .content .row .card .info span,
 .contact .content .row .card .info span a {
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: var(--transition-normal);
 }
 
